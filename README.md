@@ -4,8 +4,10 @@
 *(面向分布式系统的状态感知型溯因推理守护进程)*
 
 **Version:** 0.1.0 (The Pink Study)
+
 **Date:** February 9, 2026
-**Author:** [Your ID/Name]
+
+**Author:** [ShapeFire]
 
 ---
 
@@ -18,9 +20,19 @@
 它基于 **Rust** 构建核心运行时，利用 **eBPF** 进行内核级无侵入感知，通过 **SurrealDB** 维护动态知识图谱，并采用**贝叶斯溯因推理（Bayesian Abductive Reasoning）**算法。其核心哲学遵循：“**昨日的后验，即是今日的先验。**”通过将历史故障内化为概率权重，致力于在混沌的分布式系统中，以  的时间复杂度定位根因（RCA）。
 
 快速开始:
-> 福尔摩斯/holmesd:  cargo run --bin holmesd
+> 福尔摩斯/holmesd:    cargo run --bin holmesd
+>
+> 莫里亚蒂/moriarty:   cargo run --bin moriarty
 
-> 莫里亚蒂/moriarty: cargo run --bin moriarty
+RELEASE:
+> 
+> cargo build --release
+> 
+> cd target/release
+> 
+> ./holmesd
+> 
+> ./moriarty
 
 ---
 
