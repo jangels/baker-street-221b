@@ -1,0 +1,9 @@
+[package]
+name = "watson"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+common = { workspace = true }
+tracing = { workspace = true }
+tokio = { workspace = true }

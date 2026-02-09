@@ -1,0 +1,12 @@
+[package]
+name = "wiggins"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+common = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+# aya = "0.12" (注释掉，演示环境用模拟器)
+chrono = { workspace = true }
+rand = { workspace = true }
